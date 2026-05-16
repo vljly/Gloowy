@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gloowy - Reflect Your Glow">
+    <meta name="keywords" content="trang sức bạc, Gloowy, bạc 925, vòng cổ, nhẫn, trang sức đẹp, phụ kiện">
+    <title>Gloowy |  Reflect Your Glow</title>
+    
+    <!-- Fonts are loaded via @import in style.css -->
+    
+    <!-- Favicon - Hình nhỏ trên tab trình duyệt -->
+    <link rel="icon" type="image/png" href="Photo/Favicon.png?v=1">
+    <link rel="apple-touch-icon" href="Photo/Favicon.png">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+
+    <header class="navbar">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="#">
+                    <img src="Photo/Logo.png" alt="Gloowy Logo" class="navbar-logo">
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#collections">Bộ sưu tập <span class="dropdown-arrow"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#rings-collection">Nhẫn</a></li>
+                        <li><a href="#bracelets-collection">Lắc tay</a></li>
+                        <li><a href="#earrings-collection">Khuyên tai</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#footer">Liên hệ</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <h1 class="shimmer-text">Reflect Your Glow</h1>
+                <p>Vẻ đẹp thanh lịch bắt đầu từ sự tự tin bên trong bạn</p>
+                <div class="hero-btns">
+                    <a href="#collections" class="btn btn-primary">Mua ngay</a>
+                    <a href="#about" class="btn btn-outline">Khám phá câu chuyện</a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <span></span>
+            </a>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container about-wrapper">
+                <div class="about-img reveal">
+                    <img src="Photo/About Gloowy.jpg" alt="Glowy Craftsmanship" loading="lazy">
+                </div>
+                <div class="about-content reveal">
+                    <span class="subtitle">Bản giao hưởng từ sự tinh tế</span>
+                    <h2>Về Gloowy</h2>
+                    <p>Bắt đầu từ tình yêu với vẻ đẹp tinh khôi của bạc, mỗi thiết kế tại Gloowy không chỉ là món phụ kiện lấp lánh, mà còn là lời khẳng định về khí chất tự thân và bản sắc riêng biệt mà bạn luôn trân trọng.</p>
+                    <div class="brand-values">
+                        <div class="value-item">
+                            <span class="value-icon">✧</span>
+                            <div>
+                                <h4>Tinh hoa Bạc Ý</h4>
+                                <p>Chất liệu bạc Ý 925 với độ tinh khiết chuẩn mực, lưu giữ sắc trắng sáng bóng rạng rỡ cùng bạn qua năm tháng.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">✧</span>
+                            <div>
+                                <h4>Sắc xảo trong từng đường nét</h4>
+                                <p>Mỗi đường nét đều mang hơi thở hiện đại, tôn vinh nét nhẹ nhàng nhưng đầy khí chất của người phụ nữ.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">✧</span>
+                            <div>
+                                <h4>Lời cam kết cùng thời gian</h4>
+                                <p>Chính sách bảo hành 12 tháng như một lời cam kết cho chất lượng và sự tận tâm từ Gloowy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections" class="section collections">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Bộ sưu tập</h2>
+                    <p>Lựa chọn hoàn hảo cho nàng tỏa sáng trong mọi khoảnh khắc.</p>
+                </div>
+
+                <!-- Filter Navigation -->
+                <div class="collection-nav-wrapper reveal">
+                    <div class="search-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="search-input" placeholder="Tìm sản phẩm...">
+                        <span id="search-clear" class="search-clear-btn">&times;</span>
+                    </div>
+                    <ul class="filter-menu">
+                        <li class="filter-item active" data-category="all">Tất cả</li>
+                        <li class="filter-item" data-category="rings">Nhẫn</li>
+                        <li class="filter-item" data-category="bracelets">Lắc tay</li>
+                        <li class="filter-item" data-category="earrings">Khuyên tai</li>
+                        <div class="nav-underline"></div>
+                    </ul>
+                    <div class="sort-wrapper">
+                        <button id="price-sort-btn" class="sort-btn" title="Sắp xếp theo giá">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 8h9" />
+                                <path d="M11 12h7" />
+                                <path d="M11 16h5" />
+                                <path class="arrow-up" d="M3 8l3-3 3 3" />
+                                <path class="arrow-down" d="M3 16l3 3 3-3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-grid-container">
+                <div id="no-results" class="no-results hidden">
+                    <p>Không tìm thấy sản phẩm phù hợp.</p>
+                </div>
+                <div class="product-grid" id="main-product-grid">
+                    <!-- NHẪN (10 sản phẩm) -->
+                    <div class="product-card reveal" data-category="rings" data-price="850000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 1.jpg" alt="Nhẫn Luna Silver" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Élyra Silver</h3>
+                            <span class="price">215,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="1250000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 2.jpg" alt="Nhẫn Solitaire" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Lovelace</h3>
+                            <span class="price">235,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="950000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 3.jpg" alt="Nhẫn Eternity" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Hug Me</h3>
+                            <span class="price">229,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="1100000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 4.jpg" alt="Nhẫn Vintage Rose" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Ocean Tear</h3>
+                            <span class="price">267,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="720000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 5.jpg" alt="Nhẫn Minimal Wave" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Opaline</h3>
+                            <span class="price">320,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="890000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 6.jpg" alt="Nhẫn Twin Star" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Entwine</h3>
+                            <span class="price">209,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="2500000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 7.jpg" alt="Nhẫn Halo Diamond" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Azurine</h3>
+                            <span class="price">279,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="1350000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 8.jpg" alt="Nhẫn Ocean Blue" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Euphoria</h3>
+                            <span class="price">255,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="920000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 9.jpg" alt="Nhẫn Silver Leaf" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Blue Orbit</h3>
+                            <span class="price">245,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="rings" data-price="1550000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Nhẫn 10.jpg" alt="Nhẫn Galaxy" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nhẫn Flutter Tide</h3>
+                            <span class="price">245,000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- VÒNG TAY (10 sản phẩm) -->
+                    <div class="product-card reveal" data-category="bracelets" data-price="950000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 1.webp" alt="Lắc tay Enchant" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Starlace</h3>
+                            <span class="price">443,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="1450000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 2.webp" alt="Lắc tay Charm Silver" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Orbit</h3>
+                            <span class="price">275,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="1100000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 3.webp" alt="Lắc tay Cuffs" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Cuffs</h3>
+                            <span class="price">315,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="1250000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 4.webp" alt="Lắc tay Snake Bone" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Shake Bone</h3>
+                            <span class="price">350,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="880000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 5.webp" alt="Lắc tay Butterfly" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Heartbeat</h3>
+                            <span class="price">379,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="920000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 6.webp" alt="Lắc tay Daisy" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Épure</h3>
+                            <span class="price">329,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="1050000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 7.webp" alt="Lắc tay Heart" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Solstice</h3>
+                            <span class="price">305,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="1750000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 8.webp" alt="Lắc tay Seafoam" loading="lazy" class="img-fit-contain">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Seafoam</h3>
+                            <span class="price">343,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="820000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 9.webp" alt="Lắc tay Minimal" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Crystal Rain</h3>
+                            <span class="price">420,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="bracelets" data-price="990000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Lắc tay 10.webp" alt="Lắc tay Rope" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lắc tay Minimal</h3>
+                            <span class="price">290,000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- KHUYÊN TAI (10 sản phẩm) -->
+                    <div class="product-card reveal" data-category="earrings" data-price="750000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 1.webp" alt="Khuyên tai Aurora" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Muse Hoop</h3>
+                            <span class="price">170,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="650000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 2.webp" alt="Khuyên tai Drop Hoop" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Silk Wave</h3>
+                            <span class="price">195,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="1800000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 3.webp" alt="Khuyên tai Stud Diamond" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Ivory Tear</h3>
+                            <span class="price">229,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="1150000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 4.jpg" alt="Khuyên tai Long Tassel" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Periwinkle</h3>
+                            <span class="price">180,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="950000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 5.jpg" alt="Khuyên tai Pearl" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Rosé Dew</h3>
+                            <span class="price">209,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="550000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 6.jpg" alt="Khuyên tai Geometric" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Geometric</h3>
+                            <span class="price">220,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="720000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 7.jpg" alt="Khuyên tai Leaf" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Midnight</h3>
+                            <span class="price">175,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="680000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 8.jpg" alt="Khuyên tai Moon" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Halo Hoop</h3>
+                            <span class="price">170,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="1420000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 9.jpg" alt="Khuyên tai Crystal" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Silver Thorn</h3>
+                            <span class="price">190,000đ</span>
+                        </div>
+                    </div>
+                    <div class="product-card reveal" data-category="earrings" data-price="850000">
+                        <div class="product-img-wrap">
+                            <img src="Photo/Khuyên tai 10.jpg" alt="Khuyên tai Heart" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khuyên tai Swan Lake</h3>
+                            <span class="price">200,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <button id="view-all-btn" class="view-more-toggle">
+                        <span>Xem tất cả</span>
+                        <svg class="view-more-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner reveal">
+            <div class="container">
+                <h2>Sẵn sàng để tỏa sáng?</h2>
+                <p>Nhận ngay ưu đãi 15% cho đơn hàng đầu tiên khi tham gia cùng chúng tôi.</p>
+                <a href="#contact" class="btn btn-primary">Nhận ưu đãi ngay</a>
+            </div>
+        </section>
+
+        <section id="warranty" class="section benefits">
+            <div class="container benefits-grid">
+                <div class="benefits-text reveal">
+                    <h2>Chính sách bảo hành</h2>
+                    <ul class="checkmark-list">
+                        <li><strong>Bảo hành 12 tháng:</strong> Miễn phí làm sáng mới sản phẩm và hỗ trợ đính lại đá phụ nếu chẳng may có va chạm trong quá trình sử dụng.</li>
+                        <li><strong>Làm sạch trọn đời:</strong> Tặng bạn đặc quyền chăm sóc và đánh bóng sản phẩm hoàn toàn miễn phí, để món trang sức luôn giữ được vẻ đẹp như ngày đầu.</li>
+                        <li><strong>Đồng hành sửa chữa:</strong> Sẵn sàng hỗ trợ khắc phục các lỗi đứt gãy hoặc móp méo do vô tình va đập, chỉ thu phụ phí nguyên liệu nếu có phát sinh.</li>
+                    </ul>
+                    <p class="warranty-note"><i>* Lưu ý nhỏ: Gloowy xin phép từ chối bảo hành miễn phí đối với sản phẩm bị hư hỏng nặng do tiếp xúc hóa chất mạnh hoặc đã sửa chữa tại nơi khác.</i></p>
+                </div>
+                <div class="benefits-img reveal">
+                    <img src="Photo\Chính sách.jpg" alt="Gloowy Benefits" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-header">
+                        <h2>Đăng ký nhận ưu đãi</h2>
+                        <p>Trở thành người đầu tiên nhận voucher đặc quyền.</p>
+                    </div>
+                    <form id="gloowy-contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Đăng ký ngay</button>
+                    </form>
+                    <p id="form-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-column footer-brand">
+                    <a href="#home">
+                        <img src="Photo/Logo.png" alt="Gloowy Logo" class="footer-logo">
+                    </a>
+                    <p class="contact-intro">Đội ngũ Gloowy luôn sẵn sàng lắng nghe và đồng hành cùng bạn trong hành trình tìm kiếm vẻ đẹp vĩnh cửu.</p>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            167, Võ Thị Sáu, P. Trấn Biên, TP. Đồng Nai
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.18-2.18a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            0987 654 321
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            support@gloowy.vn
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Khám phá</h4>
+                    <a href="#collections">Bộ sưu tập</a>
+                    <a href="#about">Về chúng tôi</a>
+                    <a href="#warranty">Chính sách bảo hành</a>
+                </div>
+
+                <div class="footer-column footer-newsletter">
+                    <h4>Nhận thông tin mới</h4>
+                    <p>Đăng ký để không bỏ lỡ các bộ sưu tập giới hạn và ưu đãi đặc quyền.</p>
+                    <form class="footer-subscribe-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Gửi</button>
+                    </form>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Theo dõi Gloowy</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                        </a>
+                    </div>
+                    <a href="#home" class="follow-me-text">Follow me</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Gloowy. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản dịch vụ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
